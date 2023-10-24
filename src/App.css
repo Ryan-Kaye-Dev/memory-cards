@@ -1,0 +1,15 @@
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  text-align: center;
+}
+
+.card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 4px 4px 19px -3px rgba(0,0,0,0.75);
+}
