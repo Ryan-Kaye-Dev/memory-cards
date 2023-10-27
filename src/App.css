@@ -1,7 +1,23 @@
+body {
+  justify-content: center;
+  background: #DAE2F8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6bbbb, #cbd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+  
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+
 .cardWrapper {
+  padding-top: 36px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 50px;
   text-align: center;
 }
@@ -11,5 +27,40 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 4px 4px 19px -3px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 19px -3px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dee1e1;
+  border: solid 1px #ddd;
+  transform: scale(0.05); /* Initially set to a smaller size */
+  transition: transform 0.3s ease-out /* Add a transform transition */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover for an interactive effect */
+}
+
+.card.pop {
+  transform: scale(1.1); /* Apply a scale transform to make it "pop" */
+}
+
+
+.topBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.loader {
+  padding-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 48vw;
 }

@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 export default function Card({ image, text, handleCardClick }) {
   return (
     <>
