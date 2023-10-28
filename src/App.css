@@ -34,7 +34,7 @@ body {
   background-color: #dee1e1;
   border: solid 1px #ddd;
   transform: scale(0.05); /* Initially set to a smaller size */
-  transition: transform 0.3s ease-out /* Add a transform transition */
+  transition: transform 0.3s ease-out; /* Add a transform transition */
 }
 
 .card:hover {
@@ -45,6 +45,23 @@ body {
   transform: scale(1.1); /* Apply a scale transform to make it "pop" */
 }
 
+@media screen and (max-width: 768px) {
+  .cardWrapper {
+    gap: 50px; 
+  }
+
+  .topBar {
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+  }
+  
+  .card {
+    max-width: 100px;
+    flex: 1 1 50px;
+  }
+  
+}
 
 .topBar {
   display: flex;
